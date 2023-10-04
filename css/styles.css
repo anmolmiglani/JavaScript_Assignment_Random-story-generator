@@ -1,87 +1,113 @@
 /* Resetting some default styles for consistency */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-/* Applying a background color and center the text in the body */
+/* Applying a background color along with some animations and center the text in the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  animation: anmol 10s linear infinite;
+  background-color: #845ec2;
+  text-align: center;
+}
+
+@keyframes anmol {
+  0% {
+    background-color: #845ec2;
+  }
+  20% {
+    background-color: #f33058;
+  }
+  40% {
+    background-color: #402dee;
+  }
+  60% {
+    background-color: #f1d359;
+  }
+  80% {
+    background-color: #bc5ec2;
+  }
+  100% {
+    background-color: #00e2f7;
+  }
 }
 
 /* Style the header */
 h1 {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
 /* Style the main sections */
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the buttons */
 button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px; /* Add margin to separate buttons horizontally */
-    margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px; /* Add margin to separate buttons horizontally */
+  margin-top: 20px;
 }
 
 /* Style the container for the buttons */
 .button-container {
-    display: flex; /* Display buttons in a horizontal line */
-    justify-content: center; /* Optional: Center-align the buttons horizontally */
+  display: flex; /* Display buttons in a horizontal line */
+  justify-content: center; /* Optional: Center-align the buttons horizontally */
 }
-
 
 /* Style the paragraphs */
 p {
-    font-style: italic;
-    margin: 10px;
-    margin-top: 29px;
+  font-style: italic;
+  margin: 10px;
+  margin-top: 29px;
 }
 
 /* Style the story paragraph */
 #story {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 /* Style the playback and random buttons */
-#playback, #random {
-    background-color: #0056b3; /* Green background color */
-    color: white; /* White text color */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    border-radius: 4px;
+#playback,
+#random {
+  background-color: #0056b3; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s,
+    border-radius 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
 }
 
 /* Add hover effect to buttons */
-#playback:hover, #random:hover {
-    background-color: white; /* Change background color to white on hover */
-    color: #0056b3; /* Change text color to green on hover */
-    transform: scale(1.05);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#playback:hover,
+#random:hover {
+  background-color: white; /* Change background color to white on hover */
+  color: #0056b3; /* Change text color to green on hover */
+  transform: scale(1.05);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-    
 
 /* Add hover effect to buttons */
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
