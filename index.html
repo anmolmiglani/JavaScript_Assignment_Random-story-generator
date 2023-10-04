@@ -2,42 +2,54 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/styles.css">
-
+    <meta charset="utf-8" />
+    <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<h1>See-N-Say Storymaker</h1>
-	<p id="studentId: 200534220"></p>
-	<section>
-		<!-- Section with all the buttons for the user to build their story are as follows-->
-		<h2>Create Your Story</h2>
-		<div class="button-container">
-			<button id="noun1">Noun 1</button>
-			<p id="choosenNoun1"></p>
-			<button id="verb">Verb</button>
-			<p id="choosenVerb"></p>
-			<button id="adjective">Adjective</button>
-			<p id="choosenAdjective"></p>
-			<button id="noun2">Noun 2</button>
-			<p id="choosenNoun2"></p>
-			<button id="noun3">Noun 3</button>
-			<p id="choosennoun3"></p>
-		</div>
-	</section>
-	<section>
-		<!-- Section with playback controls to see or hear the story -->
-		<h2>See Story</h2>
-		<button id="playback">Show Your Story</button>
-		<button id="random">Random Story</button>
-		<!-- Empty paragraph to display the story -->
-		<p id="story"></p>
-	</section>
-	<script src="js/script.js"></script>
+    <h1>See-N-Say Storymaker</h1>
+    <p id="studentId" 200534220 is my student id></p>
+    <button id="changeStudentId">Change Student ID</button> <!-- Added a button -->
+    <section>
+        <!-- Section with all the buttons for the user to build their story are as follows-->
+        <h2>Create Your Story</h2>
+        <div class="button-container">
+            <button id="noun1">Noun 1</button>
+            <p id="choosenNoun1"></p>
+            <button id="verb">Verb</button>
+            <p id="choosenVerb"></p>
+            <button id="adjective">Adjective</button>
+            <p id="choosenAdjective"></p>
+            <button id="noun2">Noun 2</button>
+            <p id="choosenNoun2"></p>
+            <button id="noun3">Noun 3</button>
+            <p id="choosennoun3"></p>
+        </div>
+    </section>
+    <section>
+        <!-- Section with playback controls to see or hear the story -->
+        <h2>See Story</h2>
+        <button id="playback">Show Your Story</button>
+        <button id="random">Random Story</button>
+        <!-- Empty paragraph to display the story -->
+        <p id="story"></p>
+    </section>
+    <script src="js/script.js"></script>
+    <script>
+        // JavaScript code to change student ID on button click
+        const studentIdParagraph = document.getElementById("studentId");
+        const changeStudentIdButton = document.getElementById("changeStudentId");
 
+        changeStudentIdButton.addEventListener("click", function () {
+            // Prompt the user for a new student ID
+            const newStudentId = prompt("Enter a new student ID:");
+            
+            // Update the student ID paragraph with the new value
+            studentIdParagraph.textContent = newStudentId;
+        });
+    </script>
 </body>
 
 </html>
